@@ -1,9 +1,9 @@
 <template>
     <div>
         {{msg}}
-        用户名:<input type="text">
-        密码:<input type="password">
-        <button @click.native..prevent="login" >登录</button>
+        <el-input v-model="a" placeholder="账号"></el-input>
+        <el-input v-model="b" placeholder="密码"></el-input>
+      <el-button  type="primary" @click.native.prevent="login">登录</el-button>
     </div>
 </template>
 <script>
@@ -16,7 +16,8 @@ export default {
    },
     methods:{
         login(){
-
+            let uinfo={u:this.a,p:this.b}
+            alert("33"+uinfo)
         }
     }
 }
