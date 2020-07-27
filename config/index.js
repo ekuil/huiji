@@ -9,13 +9,14 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
+    // publish path
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
+      '/api/huiji/login':{
         target:"http://localhost:9999",
         changeOrigin:true,
         pathRewrite:{
-          '^/api': 'login'
+          '^/api': ''
         }
       }
     },

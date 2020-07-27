@@ -10,6 +10,7 @@ Vue.use(ElementUI)
 Vue.use(Axios)
 Vue.config.productionTip = false
 Vue.prototype.$ajax = Axios;
+Axios.defaults.baseURL = '/api'
 
 
 /* eslint-disable no-new */

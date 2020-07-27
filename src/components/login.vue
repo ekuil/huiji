@@ -22,9 +22,9 @@ export default {
             let userinfo={username:this.input1,password:this.input2}
             this.$ajax({
                 method:"get",
-                url:"http://localhost:9999/login",
+                url:"/huiji/login",
                 pramas:userinfo
-            }).then(result => {alert(result)}
+            }).then(result => {console.log(result.data.msg)}
             )
 
 
