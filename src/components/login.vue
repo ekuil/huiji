@@ -19,8 +19,15 @@ export default {
    },
     methods:{
         login(){
-            let uinfo={u:this.input1,p:this.input2}
-            alert("33"+uinfo.p)
+            let userinfo={username:this.input1,password:this.input2}
+            this.$ajax({
+                method:"get",
+                url:"http://localhost:9999/login",
+                pramas:userinfo
+            }).then(result => {alert(result)}
+            )
+
+
         }
     }
 }
