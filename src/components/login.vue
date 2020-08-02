@@ -33,9 +33,12 @@ export default {
                 params:userinfo
             }).then(result => {
                 if(!result.data.success){
-                    alert(result.data.msg)
+                    this.$message.error(result.data.msg);
                 }else{
-
+                    this.$message({
+                        message: '登录成功',
+                        type: 'success'
+                    });
                     this.goHome()
                 }
 
@@ -44,7 +47,7 @@ export default {
         },
         goHome:function () {
             // this.$router.push({name: '/login',params:{ id:'1'}});
-            window.location.href='/home'
+            window.location.href='/index'
         }
     }
 }
