@@ -18,6 +18,20 @@ module.exports = {
         pathRewrite:{
           '^/api': ''
         }
+      },
+      '/api/*': {
+        target: "http://localhost:9999",
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      },
+      '/api/getSelects': {
+        target: "http://localhost:9999",
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
       }
     },
 

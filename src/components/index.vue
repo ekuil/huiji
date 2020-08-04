@@ -10,9 +10,9 @@
                <leftMenu></leftMenu>
            </el-aside>
 
-           <el-main>main
+           <el-main>
                <div>
-                   <router-view>main</router-view>
+                   <router-view></router-view>
                </div>
            </el-main>
 
