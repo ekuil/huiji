@@ -1,9 +1,12 @@
 <template>
     <div>
         <div> {{msg}}</div>
-        <el-input v-model="input1" placeholder="账号" v-bind:class="{input:isinput}"></el-input>
-        <el-input v-model="input2" placeholder="密码" :class="{input:isinput}" show-password minlength="6"> </el-input>
-        <div> <el-button  type="primary" @click.native.prevent="login">登录</el-button></div>
+        <el-form >
+            <el-input v-model="input1" placeholder="账号" v-bind:class="{input:isinput}"></el-input>
+            <el-input v-model="input2" placeholder="密码" :class="{input:isinput}" show-password minlength="6"> </el-input>
+            <div> <el-button  type="primary" @click.native.prevent="login">登录</el-button></div>
+        </el-form>
+
     </div>
 </template>
 <style>

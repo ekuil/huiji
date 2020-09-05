@@ -1,5 +1,7 @@
 <template>
-    <span>101 home</span>
+    <div style="">
+        <span style="background-image: url('./static/logo.png')">101 home</span>
+    </div>
 </template>
 
 <script>

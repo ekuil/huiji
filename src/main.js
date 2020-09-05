@@ -5,12 +5,16 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+// const echarts=require("echarts")
+import echarts from "echarts";
 import Axios from "axios";
+Vue.use(echarts);
 Vue.use(ElementUI)
 Vue.use(Axios)
 Vue.config.productionTip = false
 Vue.prototype.$ajax = Axios;
 Axios.defaults.baseURL = '/api'
+Vue.prototype.$echarts = echarts
 
 
 /* eslint-disable no-new */
