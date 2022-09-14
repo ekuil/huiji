@@ -54,7 +54,7 @@ export default new Router({
           component:inTable
         },
         {
-          path:"/index/outTable",
+          path:"/index/outTable", 
           name:"outTable",
           component:outTable
         },{
